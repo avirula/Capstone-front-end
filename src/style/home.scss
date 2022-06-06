@@ -1,0 +1,29 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .username-title h1 {
+        // color: rgb(14, 9, 9);
+        font-family: 'Grandstander', cursive;
+        font-size: 100px;
+        color: rgba(39, 43, 68, 0.964);
+        text-shadow: 2px 2px 3px black;
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: white;
+        // text-shadow: 2px 2px 5px white;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .home-page-container {
+
+        .username-title h1 {
+            font-size: 50px;
+        }
+    }
+}
+
+
