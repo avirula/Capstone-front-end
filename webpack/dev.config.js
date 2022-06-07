@@ -45,9 +45,9 @@ module.exports = webpackMerge(webpackCommon, {
           },
           {
             loader: 'sass-loader',
-            options: {
-              implementation: require("sass"),
-            }
+            // options: {
+            //   implementation: require("sass"),
+            // }
           }
         ]
       }
