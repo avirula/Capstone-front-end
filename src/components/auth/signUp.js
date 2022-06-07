@@ -19,7 +19,7 @@ export default function SignUp() {
             setError(true);
             setErrorMessage('Error: The password must match.');
         } else {
-            fetch('http://127.0.0.1:5000/user/add', {
+            fetch('https://floating-mesa-61916.herokuapp.com/user/add', {
                 method: 'POST',
                 headers: { 'content-type': 'application/json'},
                 body: JSON.stringify({

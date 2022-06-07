@@ -13,7 +13,7 @@ class Charts extends Component {
   
   componentDidMount() {
     // console.log('componentDidMount');
-    fetch('http://127.0.0.1:5000/expense/get')
+    fetch('https://floating-mesa-61916.herokuapp.com/expense/get')
     .then((response) => response.json())
     .then((name) => this.setState(() => {
     

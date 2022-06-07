@@ -12,7 +12,7 @@ export default  function Home(props) {
     const [editMode, setEditMode] = useState(false);
 
     const getAllExpenses = () => {
-        axios.get('http://127.0.0.1:5000/expense/get')
+        axios.get('https://floating-mesa-61916.herokuapp.com/expense/get')
         .then(res => {
             setAllExpenses(res.data);
             console.log(res.data);
@@ -33,7 +33,7 @@ export default  function Home(props) {
     }
 
     const handleDeleteClick = (id) => {
-        axios.delete(`http://127.0.0.1:5000/expense/delete/${id}`)
+        axios.delete(`https://floating-mesa-61916.herokuapp.com/expense/delete/${id}`)
         .then(res => {
             setAllExpenses(allExpenses.filter(expense => {
                 return expense.id != id;

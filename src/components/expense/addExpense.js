@@ -64,10 +64,10 @@ export default function AddExpense(props) {
     useEffect( () => {
         console.log(expenseToEdit, request, requestType, endPoint)
         if(requestType === 'add') {
-            setEndPoint('http://127.0.0.1:5000/expense/add');
+            setEndPoint('https://floating-mesa-61916.herokuapp.com/expense/add');
             setRequest('POST');
         } else if (requestType === 'update') {
-            setEndPoint(`http://127.0.0.1:5000/expense/update/${expenseToEdit.id}`);
+            setEndPoint(`https://floating-mesa-61916.herokuapp.com/expense/update/${expenseToEdit.id}`);
             setRequest('PUT');
 
             if(expenseToEdit) {
